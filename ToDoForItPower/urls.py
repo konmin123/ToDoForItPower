@@ -35,6 +35,7 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('docs/', schema_view.with_ui("swagger")),
+    path('', include("ToDoApi.urls")),
     path('__debug__/', include('debug_toolbar.urls')),
     path('api-auth', include('rest_framework.urls')),
     path('auth/', include('djoser.urls')),

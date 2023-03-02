@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ToDoModels.apps.TodomodelsConfig',
+    'ToDoApi.apps.TodoapiConfig',
     'drf_yasg',
     'djoser',
     'rest_framework',
